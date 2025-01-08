@@ -1,0 +1,17 @@
+<!-- HTML1: First Route Page -->
+<div class="main">
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+      <button routerLink="/second">Go To Second Route</button>
+    </div>
+  
+    <!-- Main Content -->
+    <div class="container">
+      <p>First Route</p>
+      <div *ngFor="let question of questions; let i = index">
+        <p>{{ i + 1 }}. {{ question.question }}</p>
+        <p><strong>Answer:</strong> {{ question.answer }}</p>
+      </div>
+    </div>
+  </div>
+  
